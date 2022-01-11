@@ -89,7 +89,9 @@ fun main() {
 
   val numbers: IntArray = intArrayOf(1, 2, 3)
 
-  var squares = IntArray(10) { it * it }
+  /* var squares = IntArray(10) { it * it } */
+  /* var squares = IntArray(10) { i -> i * i } */
+  var squares = IntArray(10, { i -> i * i })
   println(java.util.Arrays.toString(squares))
 
   for ((i, donut) in donuts.withIndex()) {
